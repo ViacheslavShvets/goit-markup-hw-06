@@ -1,2 +1,3 @@
-# goit-markup-hw-06
-МОДУЛЬ 6. РОЗМІТКА ФОРМ. СТИЛІЗАЦІЯ ФОРМ
+# goit-markup-hw-05
+
+адресою https://viacheslavshvets.github.io/goit-markup-hw-05/
