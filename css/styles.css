@@ -737,7 +737,7 @@ a {
 	visibility: hidden;
 }
 
-.modal-btn {
+.modal-close-btn {
 	width: 30px;
 	height: 30px;
 
@@ -754,4 +754,141 @@ a {
 
 	cursor: pointer;
 }
-/* модальне вікно кіець */
+.modal-text {
+	margin-bottom: 12px;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	color: var(--gray-txt-cl);
+}
+.modal-tab {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+	color: var(--gray-txt-cl);
+}
+.modal-label textarea {
+	width: 100%;
+	min-height: 120px;
+	resize: none;
+	margin-top: 4px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding: 12px 16px;
+	margin-bottom: 20px;
+}
+.modal-label textarea::placeholder {
+	font-size: 12px;
+	line-height: 1.17px;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}
+.terms {
+	font-family: inherit;
+	line-height: 1.71;
+	color: var(--gray-txt-cl);
+
+	color: var(--accent-txt-cl);
+	text-decoration: underline;
+}
+
+.submit-modal {
+	min-width: 200px;
+	height: 100%;
+	padding: 10px 55px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--accent-text-color);
+	background: var(--accent-txt-cl);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border-color: transparent;
+}
+.modal-accepting {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: inherit;
+	line-height: 1.71;
+	color: var(--secondary-text-color);
+}
+
+.confirmation-box-accepting {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.confirmation-box-accepting:checked + .confirmation {
+	background-color: var(--accent-txt-cl);
+	border-color: #2196f3;
+}
+
+.confirmation {
+	position: absolute;
+	left: 51.5px;
+	background-origin: border-box;
+}
+
+.box {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	border: 2px solid var(--primary-text-color);
+	margin-right: 8px;
+}
+
+.modal-input {
+	width: 100%;
+	min-height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+
+	border-radius: 4px;
+	margin-top: 4px;
+	padding: 0;
+}
+.modal-icon {
+	position: absolute;
+	top: 15px;
+	left: 12px;
+}
+.input-svg {
+	position: relative;
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-svg:focus-within > .modal-icon {
+	fill: var(--accent-txt-cl);
+}
+
+.input-svg .modal-input:focus {
+	border: 1px solid #2196f3;
+}
+
+/* модальне вікно кіець */ ;

@@ -409,14 +409,63 @@
   <!--модальне вікно секції героя -->
   <div class="background-m is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn" type="button" data-modal-close>
+      <!-- =============== -->
+      <button class="modal-close-btn" type="button" data-modal-close>
         <svg class="" width="18" height="18">
           <use href="./image/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <!-- ================== -->
+      <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+      <!-- ==========рядок імя======== -->
+      <form name="signup_form">
+        <label class="modal-tab">Имя
+          <div class="input-svg">
+            <input class="modal-input" type="text" name="name" />
+            <svg class="modal-icon" width="18" height="18px">
+              <use href="./image/icons.svg#icon-name-modal"></use>
+            </svg>
+          </div>
+        </label>
+        <!-- =========рядок телефон========== -->
+        <label class="modal-tab">Телефон
+
+          <div class="input-svg">
+            <input class="modal-input" type="tel" name="phone_number" />
+            <svg class="modal-icon" width="18" height="18px">
+              <use href="./image/icons.svg#icon-tel-modal"></use>
+            </svg>
+          </div>
+        </label>
+        <!-- ========рядок пошта========= -->
+        <label class="modal-tab">Почта
+          <div class="input-svg">
+            <input class="modal-input" type="email" name="email" />
+            <svg class="modal-icon" width="18" height="18px">
+              <use href="./image/icons.svg#icon-mail-modal"></use>
+            </svg>
+          </div>
+        </label>
+        <!-- ========дод.рядок коментар========= -->
+        <label class="modal-tab">Комментарий
+          <textarea name="comment" rows="5" placeholder="Введите текст"></textarea>
+        </label>
+        <!-- ========підтверження========= -->
+        <label class="modal-accepting">
+          <input class="confirmation-box-accepting" type="checkbox" name="accepting" value="accepting" />
+          <svg class="confirmation" width="16px" height="15px">
+            <use href="./image/icons.svg#icon-confirmation"></use>
+          </svg>
+          <span class="box"></span>Соглашаюсь с рассылкой и принимаю&nbsp;
+          <a class="terms" href="">Условия договора</a>
+        </label>
+        <!-- =========кнопка відправити========= -->
+        <button type="submit" class="submit-modal">Отправить</button>
+
+      </form>
     </div>
   </div>
-
+  <!-- підключив JS -->
   <script src="./js/modal.js"></script>
 
 </body>
