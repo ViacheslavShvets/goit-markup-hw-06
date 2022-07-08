@@ -717,6 +717,8 @@ a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	z-index: 20;
+
+	transition: opacity 250ms var(--timing-variable), visibility 250ms var(--timing-variable);
 }
 
 .modal {
